@@ -1,13 +1,13 @@
-#!/usr/bin python3
+#!/usr/bin/python3
 """
 Module minimum operations
 """
 
 
-def min_operations(n):
+def minOperations(n):
     """
-    calculate the minimum number of operations
-    needed to obtain exactly n H characters
+    Calculate the minimum number of operations
+    needed to obtain exactly n H characters.
     """
 
     if n <= 1:
@@ -18,13 +18,9 @@ def min_operations(n):
 
     while n != 1:
         if n % divisor == 0:
-            n = n / divisor
-            operations = operations + divisor
+            operations += divisor
             n //= divisor
         else:
             divisor += 1
 
     return operations
-
-
-
