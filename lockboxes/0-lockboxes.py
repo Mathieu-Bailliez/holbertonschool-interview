@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 """Determine whether all boxes in a list can be unlocked."""
 
+
 def canUnlockAll(boxes):
+    """Take a list of list as a parameter and return True if the all the boxe
+    can be unlocked and False if not"""
+
     n = len(boxes)
 
     unlocked = {0}
