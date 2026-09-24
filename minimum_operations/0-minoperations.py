@@ -1,4 +1,9 @@
+#!/usr/bin/env python3
+"""Calculate the minimum operation"""
+
+
 def minOperations(n):
+    """Calculate and return the total operation for n number"""
 
     total_operations = 0
     divisor = 2
